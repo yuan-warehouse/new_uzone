@@ -1,0 +1,63 @@
+﻿
+#header {
+    height: 60px;
+    text-align: left;
+    padding: 20px;
+    border-bottom-style: inset;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: right;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: normal;
+    color: #666666;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    color: #00ffff;
+}
+
+.nabla {
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid red;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+#footer {
+    background-color: #373843;
+    height: 420px;
+    color: #333333;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited {
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    color: #00ffff;
+}

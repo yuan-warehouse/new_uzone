@@ -1,0 +1,159 @@
+﻿
+.layout {
+    background: #f8f8f8;
+    position: relative;
+    overflow: hidden;
+}
+.ivu-layout-header {
+    /*position :fixed ;*/
+    background-color: #ffffff;
+    border-bottom-style: inset;
+    padding:0;
+}
+.ivu-menu-horizontal {
+    height: 0
+}
+.ivu-menu{
+    border-bottom-style:none;
+}
+.layout-logo {
+    border-radius: 3px;
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.layout-nav {
+    width: 520px;
+    margin: 0 auto;
+    margin-right: 20px;
+}
+.ivu-dropdown a:link, .ivu-dropdown a:visited {
+    color: #666666;
+    display: block;
+    font-weight: normal;
+    text-decoration: none;
+}
+.ivu-dropdown a:hover, .ivu-dropdown a:active {
+    display: block;
+    font-weight: normal;
+    color: #2d8cf0;
+    text-decoration: none;
+}
+.ivu-carousel-dots-inside {
+    padding-top:40px;
+}
+.ivu-layout-content p {
+    font-size: larger;
+}
+
+.ivu-layout-content{
+    width:100%;
+    background-color:#f8f8f8;
+}
+
+.ivu-layout-footer {
+    background-color: #373843;
+    padding-bottom: 50px;
+}
+
+.layout-footer-center h3{
+    color:white;
+    width:68px;
+    border-bottom:2px solid #05cccc;
+    padding-top:50px;
+    padding-bottom:4px;
+}
+.layout-footer-center li {
+    padding-top:20px;
+    list-style-type: none;
+    font-size: small;
+    height: 30px;
+}
+.layout-footer-center a:link, a:visited {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.layout-footer-center a:hover, a:active {
+    display: block;
+    font-weight: normal;
+    color: #05cccc;
+    text-decoration: none;
+}
+
+.copywright {
+    padding-top: 80px;
+    text-align:center;
+    color :white;
+}
+.demo-carousel img {
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+}
+.carousel-2 img {
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+}
+.demo-carousel {
+    background-color: #f8f8f8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.carousel-2 {
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+    .demo-carousel h1 {
+        padding-top: 50px;
+    }
+.carousel-2 h1 {
+    padding-top: 50px;
+}
+
+    .demo-carousel p {
+        font-size: large;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+.carousel-2 p {
+    font-size: large;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ivu-carousel-dots-inside {
+    bottom: 16px;
+}
+.equipment h1{
+    text-align:center;
+    padding-top:50px;
+}
+.equipment p {
+    text-align: center;
+    padding-top:10px;
+}
+.equipment img {
+    padding-top: 50px;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.equipment h3{
+    text-align :center ;
+    padding-top :20px;
+}
+.equipment button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top:50px;
+    margin-bottom :50px;
+}
+.i-content FiTools{
+    background-color:white;
+}

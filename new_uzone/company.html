@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="layout">
+            <layout>
+                <uz-header></uz-header>
+                <i-content class="FiTools">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="18" :lg="18">
+                            <h3>飞图 (FiTools) 工控平台软件</h3>
+                            <h5>飞图工控平台软件 (FiTools) 是一款跨平台（Windows/Linux）工业控制平台软件。</h5>
+                            <ul>
+                                <li>跨平台，可同时运行于 Windows7 以上版本和 Linux 所有主流发行版上。支持 64 位 /32 位 /arm 等多种 CPU。</li>
+                                <li>基于插件式的设计，提供强大的二次开发功能，可自定义功能插件，并且完美支持 C#、VB.Net 等脚本语言。</li>
+                            </ul>
+                        </i-col> 
+                    </row> 
+                </i-content>
+                <uz-footer></uz-footer>
+            </layout>
+           
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+
+            },
+            methods: {
+            }
+        })
+    </script>
+    
+</body>
+</html>

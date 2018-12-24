@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <i-header breakpoint="md" collapsible :collapsed-width="78" >
+                <row type="flex" justify="center" class="code-row-bg">
+                    <i-col :xs="24" :sm="24" :md="18" :lg="18">
+                        <i-menu mode="horizontal" theme="light" active-name="1" >
+                            <div class="layout-logo"><img src="image/logo.png" width=" 30" height="30" /></div>
+                            <div class="layout-nav">
+                                <menu-item name="1">
+                                    首页
+                                </menu-item>
+                                <menu-item name="2">
+                                    <dropdown>
+                                        <a href="javascript:void(0)">
+                                            解决方案
+                                            <icon type="ios-arrow-down"></icon>
+                                        </a>
+                                        <dropdown-menu slot="list">
+                                            <dropdown-item href="#">飞图 (FiTools) 工控平台软件</dropdown-item>
+                                            <dropdown-item href="#">前端开发库</dropdown-item>
+                                            <dropdown-item href="#">云服务</dropdown-item>
+                                        </dropdown-menu>
+                                    </dropdown>
+                                </menu-item>
+                                <menu-item name="3">
+                                    <dropdown>
+                                        <a href="javascript:void(0)">
+                                            产品案例
+                                            <icon type="ios-arrow-down"></icon>
+                                        </a>
+                                        <dropdown-menu slot="list">
+                                            <dropdown-item href="#">飞图 (FiTools) 工控平台软件</dropdown-item>
+                                            <dropdown-item href="#">前端开发库</dropdown-item>
+                                            <dropdown-item href="#">云服务</dropdown-item>
+                                        </dropdown-menu>
+                                    </dropdown>
+                                </menu-item>
+                                <menu-item name="4">
+                                    我的设备
+                                </menu-item>
+                                <menu-item name="5">
+                                    关于我们
+                                </menu-item>
+                            </div>
+                        </i-menu>
+                    </i-col>
+                </row>
+            </i-header>
+            <i-content>
+                <div class="demo-carousel">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="22" :sm="22" :md="18" :lg="18">
+                            <carousel  loop>
+                                <carousel-item>
+                                    <div class="demo-carousel">
+                                        <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                                <h1>工控平台软件</h1>
+                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <a href="4.html"><i-button type="primary">了解更多</i-button></a>
+                                            </i-col>
+                                            <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                <img src="image/Front-end.png" />
+                                            </i-col>
+                                        </row>
+                                    </div>
+                                </carousel-item>
+                                <carousel-item>
+                                    <div class="demo-carousel">
+                                        <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                                <h1>工控平台软件</h1>
+                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <a href="4.html"><i-button type="primary">了解更多</i-button></a>
+                                            </i-col>
+                                            <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                <img src="image/Front-end.png" />
+                                            </i-col>
+                                        </row>
+                                    </div>
+                                </carousel-item>
+                                <carousel-item>
+                                    <div class="demo-carousel">
+                                        <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                                <h1>工控平台软件</h1>
+                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <a href="4.html"><i-button type="primary">了解更多</i-button></a>
+                                            </i-col>
+                                            <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                <img src="image/Front-end.png" />
+                                            </i-col>
+                                        </row>
+                                    </div>
+                                </carousel-item>
+                                <carousel-item>
+                                    <div class="demo-carousel">
+                                        <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                                <h1>工控平台软件</h1>
+                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <a href="4.html"><i-button type="primary">了解更多</i-button></a>
+                                            </i-col>
+                                            <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                <img src="image/Front-end.png" />
+                                            </i-col>
+                                        </row>
+                                    </div>
+                                </carousel-item>
+                            </carousel>
+                        </i-col>
+                    </row>
+                </div>
+                <div class="carousel-2">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="22" :sm="22" :md="18" :lg="18">
+                            <carousel  loop>
+                                <carousel-item>
+                                    <div class="carousel-2">
+                                        <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                                <h1>工控平台软件</h1>
+                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <a href="4.html"><i-button type="primary">了解更多</i-button></a>
+                                            </i-col>
+                                            <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                <img src="image/Front-end.png" />
+                                            </i-col>
+                                        </row>
+                                    </div>
+                                </carousel-item>
+                                <carousel-item>
+                                    <div class="carousel-2">
+                                        <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                                <h1>工控平台软件</h1>
+                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <a href="4.html"><i-button type="primary">了解更多</i-button></a>
+                                            </i-col>
+                                            <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                <img src="image/Front-end.png" />
+                                            </i-col>
+                                        </row>
+                                    </div>
+                                </carousel-item>
+                                <carousel-item>
+                                    <div class="carousel-2">
+                                        <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                                <h1>工控平台软件</h1>
+                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <a href="4.html"><i-button type="primary">了解更多</i-button></a>
+                                            </i-col>
+                                            <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                <img src="image/Front-end.png" />
+                                            </i-col>
+                                        </row>
+                                    </div>
+                                </carousel-item>
+                                <carousel-item>
+                                    <div class="carousel-2">
+                                        <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                                <h1>工控平台软件</h1>
+                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <a href="4.html"><i-button type="primary">了解更多</i-button></a>
+                                            </i-col>
+                                            <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                <img src="image/Front-end.png" />
+                                            </i-col>
+                                        </row>
+                                    </div>
+                                </carousel-item>
+                            </carousel>
+                        </i-col>
+                    </row>
+                </div>
+                <div class="equipment">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="22" :sm="22" :md="18" :lg="18">
+                            <h1>我的设备</h1>
+                            <p>支持Windows、Linux、Mac、iOS、 Andriod平台，走到哪您都可以享受我们的服务</p>
+                            <row type="flex" justify="center" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img src="image/wenjianfuwu.png" />
+                                    <h3>文件服务</h3>
+                                    <p>安全可靠的云存储，保留您设备的每一条数据</p>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img src="image/xiaoxituisong.png" />
+                                    <h3>消息推送</h3>
+                                    <p>多平台支持，走到哪您都可以享受我们的服务</p>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img src="image/jishitongxun.png" />
+                                    <h3>即时通讯</h3>
+                                    <p>可以通过短信，邮件等形式即时接收设备消息</p>
+                                </i-col>
+                            </row>
+                            <a href="4.html"><i-button type="primary">查看演示</i-button></a>
+                        </i-col>
+                    </row> 
+                </div>
+            </i-content>
+            <i-footer class="layout-footer-center">
+                <row type="flex" justify="center" class="code-row-bg">
+                    <i-col :xs="24" :sm="24" :md="18" :lg="18">
+                        <row type="flex" justify="space-between" class="code-row-bg">
+                            <i-col :xs="24" :sm="24" :md="6" :lg="6">
+                                <h3><span>解决方案</span></h3>
+                                <ul>
+                                    <li><a href="#home">飞图(FiTools)工控平台软件</a></li>
+                                    <li><a href="#news">前端开发库</a></li>
+                                    <li><a href="#contact">云服务</a></li>
+                                    <li><a href="#about">嵌入式系统</a></li>
+                                </ul>
+                            </i-col>
+                            <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                <h3>产品案例</h3>
+                                <row>
+                                    <i-col :xs="12" :sm="12" :md="12" :lg="12">
+                                        <ul>
+                                            <li><a href="Company Profile.html">车架防吊起系统</a></li>
+                                            <li><a href="#news">锁扣识别系统</a></li>
+                                            <li><a href="#contact">防砸车头系统</a></li>
+                                            <li><a href="#about">集装箱堆放异常检测系统</a></li>
+                                            <li><a href="#home">集卡对位系统</a></li>
+                                            <li><a href="#news">异常/入侵检测系统</a></li>
+                                            <li><a href="#contact">轮胎吊大车自动行走系统（AGSS）</a></li>
+                                            <li><a href="#about">声纹检测系统（VRS)</a></li>
+                                        </ul>
+                                    </i-col>
+                                    <i-col :xs="12" :sm="12" :md="12" :lg="12">
+                                        <ul>
+                                            <li><a href="#home">车架防吊起系统</a></li>
+                                            <li><a href="#news">锁扣识别系统</a></li>
+                                            <li><a href="#contact">防砸车头系统</a></li>
+                                            <li><a href="#about">集装箱堆放异常检测系统</a></li>
+                                            <li><a href="#home">集卡对位系统</a></li>
+                                            <li><a href="#news">异常/入侵检测系统</a></li>
+                                            <li><a href="#contact">轮胎吊大车自动行走系统（AGSS）</a></li>
+                                            <li><a href="#about">声纹检测系统（VRS)</a></li>
+                                        </ul>
+                                    </i-col>
+                                </row>
+                            </i-col>
+                            <i-col :xs="24" :sm="24" :md="6" :lg="6">
+                                <h3>关于我们</h3>
+                                <ul>
+                                    <li><a href="#home">飞图(FiTools)工控平台软件</a></li>
+                                    <li><a href="#news">前端开发库</a></li>
+                                    <li><a href="#contact">云服务</a></li>
+                                    <li><a href="#about">嵌入式系统</a></li>
+                                </ul>
+                            </i-col>
+                        </row>
+                        <div class="copywright">苏ICP备13037848号-1©常州云众智能科技有限公司版权所有</div>
+                    </i-col>
+                </row>
+            </i-footer>
+        </layout>
+
+    </div>
+    <script>
+        //var Main = {
+        //    data() {
+        //        return {
+        //            value1: 0
+        //        }
+        //    }
+        //}
+
+        //var Component = Vue.extend(Main)
+        //new Component().$mount('#app')
+        var vm = new Vue({
+            el: '#app',
+          
+        });
+    </script>
+</body>
+</html>
