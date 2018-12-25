@@ -39,7 +39,17 @@ Vue.component('uz-header', {
                                     我的设备\
                                 </menu-item>\
                                 <menu-item name="5">\
-                                    关于我们\
+                                    <dropdown>\
+                                        <a href="javascript:void(0)">\
+                                            关于我们\
+                                            <icon type="ios-arrow-down"></icon>\
+                                        </a>\
+                                        <dropdown-menu slot="list">\
+                                            <a href="company.html"><dropdown-item >公司介绍</dropdown-item></a>\
+                                            <a href="contact.html"><dropdown-item >联系我们</dropdown-item></a>\
+                                            <dropdown-item href="#">云服务</dropdown-item>\
+                                        </dropdown-menu>\
+                                    </dropdown>\
                                 </menu-item>\
                             </div>\
                         </i-menu>\
@@ -114,60 +124,63 @@ Vue.component('uz-carousel', {
 
 // 尾组件
 Vue.component('uz-footer', {
-	template: '<i-footer class="layout-footer-center">\
-		< row type="flex" justify="center" class= "code-row-bg" >\
-			<i-col : xs="24" : sm="24" : md="18" : lg="18">\
-				<row type="flex" justify="space-between" class="code-row-bg">\
-					<i-col : xs="24" :sm="24" :md="6" :lg="6">\
-                                <h3><span>解决方案</span></h3>\
-					<ul>\
-						<li><a href="#home">飞图(FiTools)工控平台软件</a></li>\
-						<li><a href="#news">前端开发库</a></li>\
-						<li><a href="#contact">云服务</a></li>\
-						<li><a href="#about">嵌入式系统</a></li>\
-					</ul>\
-                            </i-col>\
-				<i-col : xs="24" :sm="24" :md="12" :lg="12">\
-                                <h3>产品案例</h3>\
-				<row>\
-					<i-col : xs="12" :sm="12" :md="12" :lg="12">\
-                                        <ul>\
-						<li><a href="Company Profile.html">车架防吊起系统</a></li>\
-						<li><a href="#news">锁扣识别系统</a></li>\
-						<li><a href="#contact">防砸车头系统</a></li>\
-						<li><a href="#about">集装箱堆放异常检测系统</a></li>\
-						<li><a href="#home">集卡对位系统</a></li>\
-						<li><a href="#news">异常/入侵检测系统</a></li>\
-						<li><a href="#contact">轮胎吊大车自动行走系统（AGSS）</a></li>\
-						<li><a href="#about">声纹检测系统（VRS)</a></li>\
-					</ul>\
-                                    </i-col>\
-				<i-col : xs="12" :sm="12" :md="12" :lg="12">\
-                                        <ul>\
-					<li><a href="#home">车架防吊起系统</a></li>\
-					<li><a href="#news">锁扣识别系统</a></li>\
-					<li><a href="#contact">防砸车头系统</a></li>\
-					<li><a href="#about">集装箱堆放异常检测系统</a></li>\
-					<li><a href="#home">集卡对位系统</a></li>\
-					<li><a href="#news">异常/入侵检测系统</a></li>\
-					<li><a href="#contact">轮胎吊大车自动行走系统（AGSS）</a></li>\
-					<li><a href="#about">声纹检测系统（VRS)</a></li>\
-				</ul>\
-			</i-col>\
-                                </row>\
-                            </i-col >\
-		<i-col : xs="24" : sm="24" : md="6" : lg="6">\
-			<h3>关于我们</h3>\
+	template: '\
+	<i-footer class="layout-footer-center">\
+		<row type="flex" justify="center" class="code-row-bg">\
+		<i-col :xs="24" :sm="24" :md="18" :lg="18">\
+	<row type="flex" justify="space-between" class="code-row-bg">\
+	<i-col :xs="24" :sm="24" :md="6" :lg="6">\
+		<h3> <span>解决方案</span></h3>\
 			<ul>\
 				<li><a href="#home">飞图(FiTools)工控平台软件</a></li>\
 				<li><a href="#news">前端开发库</a></li>\
 				<li><a href="#contact">云服务</a></li>\
 				<li><a href="#about">嵌入式系统</a></li>\
 			</ul>\
-		</i-col>\
-                        </row>\
-		<div class="copywright">苏ICP备13037848号-1©常州云众智能科技有限公司版权所有</div>\
-                    </i-col >\
-                </row>\
-            </i-footer >'
+    </i-col >\
+	<i-col :xs="24" :sm="24" :md="12" :lg="12">\
+	<h3>产品案例</h3>\
+	<row>\
+	<i-col :xs="12" :sm="12" :md="12" :lg="12">\
+		<ul>\
+			<li><a href="Company Profile.html">车架防吊起系统</a></li>\
+			<li><a href="#news">锁扣识别系统</a></li>\
+			<li><a href="#contact">防砸车头系统</a></li>\
+			<li><a href="#about">集装箱堆放异常检测系统</a></li>\
+			<li><a href="#home">集卡对位系统</a></li>\
+			<li><a href="#news">异常/入侵检测系统</a></li>\
+			<li><a href="#contact">轮胎吊大车自动行走系统（AGSS）</a></li>\
+			<li><a href="#about">声纹检测系统（VRS)</a></li>\
+        </ul>\
+    </i-col >\
+	<i-col :xs="12" :sm="12" :md="12" :lg="12">\
+		<ul>\
+			<li><a href="#home">车架防吊起系统</a></li>\
+			<li><a href="#news">锁扣识别系统</a></li>\
+			<li><a href="#contact">防砸车头系统</a></li>\
+			<li><a href="#about">集装箱堆放异常检测系统</a></li>\
+			<li><a href="#home">集卡对位系统</a></li>\
+			<li><a href="#news">异常/入侵检测系统</a></li>\
+			<li><a href="#contact">轮胎吊大车自动行走系统（AGSS）</a></li>\
+			<li><a href="#about">声纹检测系统（VRS)</a></li>\
+        </ul>\
+    </i-col >\
+	</row>\
+	</i-col>\
+	<i-col :xs="24" :sm="24" :md="6" :lg="6">\
+		<h3> 关于我们</h3>\
+			<ul>\
+				<li><a href="#home">飞图(FiTools)工控平台软件</a></li>\
+				<li><a href="#news">前端开发库</a></li>\
+				<li><a href="#contact">云服务</a></li>\
+				<li><a href="#about">嵌入式系统</a></li>\
+			</ul>\
+    </i-col >\
+	</i-col>\
+	</row>\
+	<div class="copywright">苏ICP备13037848号-1©常州云众智能科技有限公司版权所有</div>\
+	</i-col>\
+	</row>\
+	</i-footer>\
+	'
 });

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="layout">
+            <layout>
+                <uz-header></uz-header>
+                <i-content class="contact">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="16" :lg="16">
+                            <row type="flex" justify="center" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img class="img-circle" src="image/address.png" />
+                                    <h2>地址</h2>
+                                    <p>常州市北塘河路8号2区16栋01号206</p>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img class="img-circle" src="image/telphone.png" />
+                                    <h2>电话</h2>
+                                    <p>86-519-88556509</p>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img class="img-circle" src="image/email.png" />
+                                    <h2>邮箱</h2>
+                                    <p>public@uzonetec.com</p>
+                                </i-col>
+                            </row>
+                            <div id="allmap" style="width:800px auto;height:300px">
+                                <script type="text/javascript">
+                                    //百度地图API功能
+                                    function loadJScript() {
+                                        var script = document.createElement("script");
+                                        script.type = "text/javascript";
+                                        script.src = "http://api.map.baidu.com/api?v=2.0&ak=q6El2RP9tZivQ143mgAe9kFR2MhH2L8r&callback=init";
+                                        document.body.appendChild(script);
+                                    }
+                                    function init() {
+                                        var map = new BMap.Map("allmap");            // 创建Map实例
+                                        var lon = 120.017968;      //经度
+                                        var lat = 31.813327;       //纬度
+                                        var point = new BMap.Point(lon, lat); // 创建点坐标
+                                        var navigationControl = new BMap.NavigationControl({
+                                            // 靠左上角位置
+                                            anchor: BMAP_ANCHOR_TOP_LEFT,
+                                            // LARGE类型
+                                            type: BMAP_NAVIGATION_CONTROL_LARGE,
+                                            // 启用显示定位
+                                            enableGeolocation: true
+                                        });
+                                        map.addControl(navigationControl);  // 添加定位控件
+                                        map.centerAndZoom(point, 15);
+                                        map.enableScrollWheelZoom();                 //启用滚轮放大缩小
+                                        map.enableScrollWheelZoom();
+
+                                        // 创建标注
+                                        var marker = new BMap.Marker(point);
+                                        // 将标注添加到地图中
+                                        map.addOverlay(marker);
+                                        //跳动的动画
+                                        marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+                                    }
+                                    window.onload = loadJScript;  //异步加载地图
+                                </script>
+                            </div>
+                        </i-col>
+                    </row>
+                </i-content>
+                <uz-footer></uz-footer>
+
+            </layout>
+
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+
+            },
+            methods: {
+            }
+        })
+    </script>
+</body>
+</html>

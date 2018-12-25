@@ -1,6 +1,5 @@
 ﻿
 .layout {
-    background: #f8f8f8;
     position: relative;
     overflow: hidden;
 }
@@ -43,25 +42,25 @@
 .ivu-carousel-dots-inside {
     padding-top:40px;
 }
-.ivu-layout-content p {
+.demo-carousel p .carousel-2 p {
     font-size: larger;
 }
 
-.ivu-layout-content{
-    width:100%;
-    background-color:#f8f8f8;
+.demo-carousel {
+    width: 100%;
+    background-color: #f8f8f8;
 }
 
 .ivu-layout-footer {
     background-color: #373843;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .layout-footer-center h3{
     color:white;
     width:68px;
     border-bottom:2px solid #05cccc;
-    padding-top:50px;
+    padding-top:30px;
     padding-bottom:4px;
 }
 .layout-footer-center li {
@@ -128,11 +127,15 @@
 .ivu-carousel-dots-inside {
     bottom: 16px;
 }
+.equipment {
+    background-color :#f8f8f8;
+}
 .equipment h1{
     text-align:center;
     padding-top:50px;
 }
 .equipment p {
+    font-size:larger;
     text-align: center;
     padding-top:10px;
 }
@@ -154,6 +157,29 @@
     margin-top:50px;
     margin-bottom :50px;
 }
-.i-content FiTools{
-    background-color:white;
+.ivu-layout-content{
+    background-color:#ffffff;
+}
+.ivu-layout-content p{
+    padding-top :30px;
+}
+.Introduction{
+    height :490px;
+}
+.contact{
+    padding-top:50px;
+    padding-bottom :50px;
+    text-align :center ;
+}
+.contact p{
+    padding-top:20px;
+    padding-bottom :30px;
+}
+.img-circle {
+    width: 80px;
+    height: 80px;
+    float: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 50%;
 }
