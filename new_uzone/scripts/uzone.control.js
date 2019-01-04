@@ -3,12 +3,10 @@ Vue.component('uz-header', {
 	template: '<i-header breakpoint="md" collapsible :collapsed-width="78" >\
                 <row type="flex" justify="center" class="code-row-bg">\
                     <i-col :xs="24" :sm="24" :md="18" :lg="18">\
-                        <i-menu mode="horizontal" theme="light" active-name="1" >\
+                        <i-menu mode="horizontal" theme="light">\
                             <div class="layout-logo"><img src="image/logo.png" width=" 30" height="30" /></div>\
                             <div class="layout-nav">\
-                                <menu-item name="1">\
-                                    首页\
-                                </menu-item>\
+                                <a href=index.html><menu-item name="1">首页</menu-item></a>\
                                 <menu-item name="2">\
                                     <dropdown>\
                                         <a href="javascript:void(0)">\
@@ -16,9 +14,10 @@ Vue.component('uz-header', {
                                             <icon type="ios-arrow-down"></icon>\
                                         </a>\
                                         <dropdown-menu slot="list">\
-                                            <dropdown-item href="#">飞图 (FiTools) 工控平台软件</dropdown-item>\
-                                            <dropdown-item href="#">前端开发库</dropdown-item>\
-                                            <dropdown-item href="#">云服务</dropdown-item>\
+                                            <a href="solution-FiTools.html"><dropdown-item>飞图 (FiTools) 工控平台软件</dropdown-item></a>\
+                                            <a href="solution-fontend.html"><dropdown-item>前端开发库</dropdown-item></a>\
+                                            <a href="solution-cloud.html"><dropdown-item>云服务</dropdown-item></a>\
+											<a href="solution-embedded.html"><dropdown-item>嵌入式系统</dropdown-item></a>\
                                         </dropdown-menu>\
                                     </dropdown>\
                                 </menu-item>\
@@ -29,9 +28,21 @@ Vue.component('uz-header', {
                                             <icon type="ios-arrow-down"></icon>\
                                         </a>\
                                         <dropdown-menu slot="list">\
-                                            <dropdown-item href="#">飞图 (FiTools) 工控平台软件</dropdown-item>\
-                                            <dropdown-item href="#">前端开发库</dropdown-item>\
-                                            <dropdown-item href="#">云服务</dropdown-item>\
+                                            <a href="solution-FiTools.html"><dropdown-item>车架防吊起系统</dropdown-item></a>\
+                                            <a href="solution-fontend.html"><dropdown-item>锁扣识别系统</dropdown-item></a>\
+                                            <a href="solution-cloud.html"><dropdown-item>防砸车头系统</dropdown-item></a>\
+											<a href="solution-embedded.html"><dropdown-item>集装箱堆放异常检测系统</dropdown-item></a>\
+											<a href="solution-FiTools.html"><dropdown-item>集卡对位系统</dropdown-item></a>\
+                                            <a href="solution-fontend.html"><dropdown-item>异常/入侵检测系统</dropdown-item></a>\
+                                            <a href="solution-cloud.html"><dropdown-item>轮胎吊大车自动行走系统（AGSS）</dropdown-item></a>\
+											<a href="solution-embedded.html"><dropdown-item>声纹检测系统（VRS)</dropdown-item></a>\
+											<a href="solution-FiTools.html"><dropdown-item>集装箱码头智能定位系统（PDS)</dropdown-item></a>\
+                                            <a href="solution-fontend.html"><dropdown-item>防打保龄系统</dropdown-item></a>\
+                                            <a href="solution-cloud.html"><dropdown-item>远程/自动操作</dropdown-item></a>\
+											<a href="solution-embedded.html"><dropdown-item>基于设备云技术的电力监控系统</dropdown-item></a>\
+											<a href="solution-FiTools.html"><dropdown-item>特种设备安全监控管理系统</dropdown-item></a>\
+                                            <a href="solution-fontend.html"><dropdown-item>远程 PLC 编程管理系统</dropdown-item></a>\
+                                            <a href="solution-cloud.html"><dropdown-item>基于大数据-云平台的智能建筑管理系统</dropdown-item></a>\
                                         </dropdown-menu>\
                                     </dropdown>\
                                 </menu-item>\
@@ -47,7 +58,7 @@ Vue.component('uz-header', {
                                         <dropdown-menu slot="list">\
                                             <a href="company.html"><dropdown-item >公司介绍</dropdown-item></a>\
                                             <a href="contact.html"><dropdown-item >联系我们</dropdown-item></a>\
-                                            <dropdown-item href="#">云服务</dropdown-item>\
+                                            <a href="join.html"><dropdown-item >加入我们</dropdown-item></a>\
                                         </dropdown-menu>\
                                     </dropdown>\
                                 </menu-item>\
@@ -58,84 +69,22 @@ Vue.component('uz-header', {
             </i-header>'
 });
 
-// 轮播组件
-Vue.component('uz-carousel', {
-	template: '\
-    <carousel v-model="value1" loop>\
-        <carousel-item>\
-            <div class="demo-carousel">\
-                <row>\
-                    <i-col span="6">\
-                        <h1>工控平台软件</h1>\
-                        <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>\
-                        </i-col>\
-                    <i-col span="6">\
-                        <img src="image/Front-end.png" />\
-                    </i-col>\
-                </row>\
-            </div>\
-        </carousel-item>\
-        <carousel-item>\
-            <div class="demo-carousel">\
-                <row>\
-                    <i-col span="6">\
-                        <h1>前端开发库</h1>\
-                        <p>可配合工控平台软件使用，	编辑设计基于Html的人机界面，支持响应式页面设计。</p>\
-                    </i-col>\
-                    <i-col span="6">\
-                        <img src="image/Front-end.png" />\
-                    </i-col>\
-                </row>\
-                </div>\
-        </carousel-item>\
-        <carousel-item>\
-            <div class="demo-carousel">\
-                <row>\
-                    <i-col span="6">\
-                        <h1>云服务</h1>\
-                        <p>为各种跨平台物联网应用、行业解决方案提供可靠简便的云端接入、存储、计算和展现服务。</p>\
-                    </i-col>\
-                    <i-col span="6">\
-                        <img src="image/Front-end.png" />\
-                    </i-col>\
-                </row>\
-            </div>\
-        </carousel-item>\
-        <carousel-item>\
-            <div class="demo-carousel">\
-                <row>\
-                    <i-col span="6">\
-                        <h1>嵌入式系统</h1>\
-                        <p>基于云众工控平台软件可高效地运行于linux平台上，且支持arm架构的CPU。我司可提供多种定制化的特制硬件开发服务。</p>\
-                    </i-col>\
-                    <i-col span="6">\
-                        <img src="image/Front-end.png" />\
-                    </i-col>\
-                </row>\
-            </div>\
-        </carousel-item>\
-    </carousel>',
-	data() {
-		return {
-			value1: 0
-		};
-	}
-});
+
 
 // 尾组件
 Vue.component('uz-footer', {
 	template: '\
 	<i-footer class="layout-footer-center">\
 		<row type="flex" justify="center" class="code-row-bg">\
-		<i-col :xs="24" :sm="24" :md="18" :lg="18">\
+		<i-col :xs="24" :sm="24" :md="14" :lg="14">\
 	<row type="flex" justify="space-between" class="code-row-bg">\
 	<i-col :xs="24" :sm="24" :md="6" :lg="6">\
 		<h3> <span>解决方案</span></h3>\
 			<ul>\
-				<li><a href="#home">飞图(FiTools)工控平台软件</a></li>\
-				<li><a href="#news">前端开发库</a></li>\
-				<li><a href="#contact">云服务</a></li>\
-				<li><a href="#about">嵌入式系统</a></li>\
+				<li><a href="solution-FiTools.html">飞图 (FiTools) 工控平台软件</a></li>\
+				<li><a href="solution-fontend.html">前端开发库</a></li>\
+				<li><a href="solution-cloud.html">云服务</a></li>\
+				<li><a href="solution-embedded.html">嵌入式系统</a></li>\
 			</ul>\
     </i-col >\
 	<i-col :xs="24" :sm="24" :md="12" :lg="12">\
@@ -155,14 +104,13 @@ Vue.component('uz-footer', {
     </i-col >\
 	<i-col :xs="12" :sm="12" :md="12" :lg="12">\
 		<ul>\
-			<li><a href="#home">车架防吊起系统</a></li>\
-			<li><a href="#news">锁扣识别系统</a></li>\
-			<li><a href="#contact">防砸车头系统</a></li>\
-			<li><a href="#about">集装箱堆放异常检测系统</a></li>\
-			<li><a href="#home">集卡对位系统</a></li>\
-			<li><a href="#news">异常/入侵检测系统</a></li>\
-			<li><a href="#contact">轮胎吊大车自动行走系统（AGSS）</a></li>\
-			<li><a href="#about">声纹检测系统（VRS)</a></li>\
+			<li><a href="#home">集装箱码头智能定位系统（PDS)</a></li>\
+			<li><a href="#news">防打保龄系统</a></li>\
+			<li><a href="#contact">远程/自动操作</a></li>\
+			<li><a href="#about">基于设备云技术的电力监控系统</a></li>\
+			<li><a href="#home">特种设备安全监控管理系统</a></li>\
+			<li><a href="#news">远程 PLC 编程管理系统</a></li>\
+			<li><a href="#contact">基于大数据-云平台的智能建筑管理系统</a></li>\
         </ul>\
     </i-col >\
 	</row>\
@@ -170,10 +118,9 @@ Vue.component('uz-footer', {
 	<i-col :xs="24" :sm="24" :md="6" :lg="6">\
 		<h3> 关于我们</h3>\
 			<ul>\
-				<li><a href="#home">飞图(FiTools)工控平台软件</a></li>\
-				<li><a href="#news">前端开发库</a></li>\
-				<li><a href="#contact">云服务</a></li>\
-				<li><a href="#about">嵌入式系统</a></li>\
+				<li><a href="company.html">公司介绍</a></li>\
+				<li><a href="contact.html">联系我们</a></li>\
+				<li><a href="join.html">加入我们</a></li>\
 			</ul>\
     </i-col >\
 	</i-col>\

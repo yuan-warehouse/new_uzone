@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="solution">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="16" :lg="16">
+                            <h1>前端开发库</h1>
+                            <p>
+                                飞图工控平台软件(FiTools)前端开发库可配合飞图工控平台使用，	编辑设计基于Html的人机界面。
+                                此前端库完全基于标准的Html/Html5标准，可与现有所有主流前端框架如bootstrap、JqueryUi、extJS等兼容。
+                            </p>
+                            <div class="background" style="height:40px;"></div>
+                            <h2>主要特性：</h2>
+                            <ul>
+                                <li>基于AngularJS，使用了JQuery、bootstrap、D3Js等开源组件库。</li>
+                                <li>支持页面级的所见即所得(WYSIWYG)编辑。</li>
+                                <li>可支持WebSocket等前后端通讯协议。</li>
+                                <li>支持响应式页面设计(Responsive Web design)，可以智能地根据用户行为以及使用的设备环境（系统平台、屏幕尺寸、屏幕定向等）进行相对应的布局。</li>
+                            </ul>
+                            <row type="flex"  class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                    <img src="image/Front-end-1.png" style=" width:100%" />
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                    <img src="image/Front-end-2.png" style=" width:100%" />
+                                </i-col>
+                            </row>
+                            <row type="flex" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                    <img src="image/Front-end-3.png" style=" width:100%" />
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                    <img src="image/Front-end-4.png" style=" width:100%" />
+                                </i-col>
+                            </row>
+                            <div class="background"></div>
+                        </i-col>
+                    </row>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="solution">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="16" :lg="16">
+                            <h1>嵌入式系统</h1>
+                            <p>
+                                由于云众工控平台软件可高效地运行于 linux 平台上， 且可以完美的支持 arm 架构的 CPU。因此经过适当的裁剪后， 即可运行在当今主流的嵌入式平台上由此我们可以提供多种 定制化的特制硬件开发服务
+                            </p>
+                            <div class="background" style="height:40px;"></div>
+                            <h2>1. 通讯网关</h2>
+                            <p style="padding-top:0">在某港口，改造现有吊具为通过通讯总线上传数据，其 选择使用 IFM0505 控制器做吊具上的集成控制器，而主电控 使用 Siemens PLC，不支持 Canbus 总线通讯。 因此我司为 其开发 Canbus 转 Fuji SPH 以太网通信的嵌入式通讯网关， 目前使用良好。</p>
+                            <div class="background" style="height:40px;"></div>
+                            <h2>2. 数据集成采集模块</h2>
+                            <p style="padding-top:0">某公司的配电站监控系统，需要采集多个配电房的多种 电表、门禁、视频监控信号，并将其集中传输至中控中心。 由于通讯协议的种类庞杂，数据流量各有大小，因此难以使 用传统的小型 PLC 采集，若使用工控机则又有稳定性和成本 的疑虑。 我司为其开发专用的数据采集模块，并且提供基于 Restful 和分布式消息队列的命令、响应服务，完美的解决了 用户的问题，至今使用良好。</p>
+                            <row type="flex" justify="center" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img src="image/qrsxt-1.png" style="width :90%;padding-top :20px"/>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img src="image/qrsxt-2.png" style="width :100%;padding-top :20px"/>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img src="image/qrsxt-3.jpg" style="width :80%;padding-top :20px"/>
+                                </i-col>
+                            </row>
+                        </i-col>
+                    </row>
+                    <div class="background"></div>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

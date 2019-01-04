@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="solution">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="16" :lg="16">
+                            <h1>云众设备云</h1>
+                            <p>
+                                为各种跨平台物联网应用、行业解决方案提供可靠简便的云端接入、存储、计算和展 现服务，我司搭建了自己的云服务平台，该平台可为合作用户和第三方开发者提供基础设 施，降低开发成本和开发门槛。
+                                同时，我们的专业团队提供持续、安全、稳定的运营服务，平台架构可扩展，帮助用 户业务解决海量接入难题。
+                            </p>
+                            <div class="background" style="height:40px;"></div>
+                        </i-col>
+                    </row>
+                    <div class="carousel-2">
+                        <row type="flex" justify="center" class="code-row-bg">
+                            <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                <carousel loop>
+                                    <carousel-item>
+                                        <div class="carousel-2">
+                                            <row type="flex" justify="center" class="code-row-bg">
+                                                <img src="image/yzsby-2.png" style="width:80%" />
+                                            </row>
+                                        </div>
+                                    </carousel-item>
+                                    <carousel-item>
+                                        <div class="carousel-2">
+                                            <row type="flex" justify="center" class="code-row-bg">
+                                                <img src="image/yzsby-1.png" style="width:80%" />
+                                            </row>
+                                        </div>
+                                    </carousel-item>
+                                    <carousel-item>
+                                        <div class="carousel-2">
+                                            <row type="flex" justify="center" class="code-row-bg">
+                                                <img src="image/yzsby-3.jpg" style="width:80%" />
+                                            </row>
+                                        </div>
+                                    </carousel-item>
+                                </carousel>
+                            </i-col>
+                        </row>
+                    </div>
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="16" :lg="16">
+                            <div class="Advantage">
+                                <row type="flex" justify="center" class="code-row-bg">
+                                    <i-col :xs="24" :sm="24" :md="6" :lg="6">
+                                        <h2>海量数据，融会贯通</h2>
+                                        <p>
+                                            超过一百万个实时数据；<br />
+                                            超过一年的历史记录。
+                                        </p>
+                                    </i-col>
+                                    <i-col :xs="24" :sm="24" :md="6" :lg="6">
+                                        <h2>坚若磐石，永不宕机</h2>
+                                        <p>
+                                            热备 + 冗余，带来超高的稳定性。
+                                        </p>
+                                    </i-col>
+                                    <i-col :xs="24" :sm="24" :md="6" :lg="6">
+                                        <h2>毫忽之间，快速响应</h2>
+                                        <p>
+                                            响应时间可低至毫秒级。
+                                        </p>
+                                    </i-col>
+                                    <i-col :xs="24" :sm="24" :md="6" :lg="6">
+                                        <h2>精益求精，引领未来</h2>
+                                        <p>
+                                            完全合乎工业标准<br />
+                                            基于最新的虚拟化技术<br />
+                                            融合先进的列式数据库技术<br />
+                                        </p>
+                                    </i-col>
+                                </row>
+                            </div>
+                            <div class="background"></div>
+                        </i-col>
+                    </row>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

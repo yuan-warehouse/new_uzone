@@ -8,6 +8,10 @@
     <script type="text/javascript" src="./scripts/vue.min.js"></script>
     <script type="text/javascript" src="./scripts/iview.min.js"></script>
     <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
 </head>
 <body>
     <div id="app">
@@ -21,9 +25,29 @@
                                 <carousel-item>
                                     <div class="demo-carousel">
                                         <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                                <div class="background" style="height :60px;"></div> 
+                                            </i-col>
                                             <i-col :xs="24" :sm="24" :md="10" :lg="10">
                                                 <h1>工控平台软件</h1>
                                                 <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <a href="4.html"><i-button type="primary">了解更多</i-button></a>
+                                            </i-col>
+                                            <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                <img src="image/software.png" />
+                                            </i-col>
+                                        </row>
+                                    </div>
+                                </carousel-item>
+                                <carousel-item>
+                                    <div class="demo-carousel">
+                                        <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                                <div class="background" style="height :60px;"></div>
+                                            </i-col>
+                                            <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                                <h1>前端开发库</h1>
+                                                <p>可配合工控平台软件使用，	编辑设计基于Html的人机界面，支持响应式页面设计。</p>
                                                 <a href="4.html"><i-button type="primary">了解更多</i-button></a>
                                             </i-col>
                                             <i-col :xs="0" :sm="0" :md="10" :lg="10">
@@ -35,13 +59,16 @@
                                 <carousel-item>
                                     <div class="demo-carousel">
                                         <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                                <div class="background" style="height :60px;"></div>
+                                            </i-col>
                                             <i-col :xs="24" :sm="24" :md="10" :lg="10">
-                                                <h1>工控平台软件</h1>
-                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <h1>云服务</h1>
+                                                <p>为各种跨平台物联网应用、行业解决方案提供可靠简便的云端接入、存储、计算和展现服务。</p>
                                                 <a href="4.html"><i-button type="primary">了解更多</i-button></a>
                                             </i-col>
                                             <i-col :xs="0" :sm="0" :md="10" :lg="10">
-                                                <img src="image/Front-end.png" />
+                                                <img src="image/cloud.png" />
                                             </i-col>
                                         </row>
                                     </div>
@@ -49,27 +76,16 @@
                                 <carousel-item>
                                     <div class="demo-carousel">
                                         <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                                <div class="background" style="height :60px;"></div>
+                                            </i-col>
                                             <i-col :xs="24" :sm="24" :md="10" :lg="10">
-                                                <h1>工控平台软件</h1>
-                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <h1>嵌入式系统</h1>
+                                                <p>基于云众工控平台软件可高效地运行于linux平台上，且支持arm架构的CPU。我司可提供多种定制化的特制硬件开发服务。</p>
                                                 <a href="4.html"><i-button type="primary">了解更多</i-button></a>
                                             </i-col>
                                             <i-col :xs="0" :sm="0" :md="10" :lg="10">
-                                                <img src="image/Front-end.png" />
-                                            </i-col>
-                                        </row>
-                                    </div>
-                                </carousel-item>
-                                <carousel-item>
-                                    <div class="demo-carousel">
-                                        <row type="flex" justify="center" class="code-row-bg">
-                                            <i-col :xs="24" :sm="24" :md="10" :lg="10">
-                                                <h1>工控平台软件</h1>
-                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
-                                                <a href="4.html"><i-button type="primary">了解更多</i-button></a>
-                                            </i-col>
-                                            <i-col :xs="0" :sm="0" :md="10" :lg="10">
-                                                <img src="image/Front-end.png" />
+                                                <img src="image/embedded.png" />
                                             </i-col>
                                         </row>
                                     </div>
@@ -85,13 +101,16 @@
                                 <carousel-item>
                                     <div class="carousel-2">
                                         <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                                <div class="background" style="height :60px;"></div>
+                                            </i-col>
                                             <i-col :xs="24" :sm="24" :md="10" :lg="10">
-                                                <h1>工控平台软件</h1>
-                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <h1>起重机安全监控管理系统</h1>
+                                                <p>通过互联网（PC/手机/平板）即可实时、安全地对各种设备进行远程监控和智能控制。</p>
                                                 <a href="4.html"><i-button type="primary">了解更多</i-button></a>
                                             </i-col>
                                             <i-col :xs="0" :sm="0" :md="10" :lg="10">
-                                                <img src="image/Front-end.png" />
+                                                <img src="image/SSL-CB.png" />
                                             </i-col>
                                         </row>
                                     </div>
@@ -99,13 +118,16 @@
                                 <carousel-item>
                                     <div class="carousel-2">
                                         <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                                <div class="background" style="height :60px;"></div>
+                                            </i-col>
                                             <i-col :xs="24" :sm="24" :md="10" :lg="10">
-                                                <h1>工控平台软件</h1>
-                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <h1>集装箱码头智能定位系统</h1>
+                                                <p>集装箱位置的侦测、位置数据的传输以及堆场管理和机器监控,过箱防撞、任务提示和位置导引。</p>
                                                 <a href="4.html"><i-button type="primary">了解更多</i-button></a>
                                             </i-col>
                                             <i-col :xs="0" :sm="0" :md="10" :lg="10">
-                                                <img src="image/Front-end.png" />
+                                                <img src="image/pds.png" style="width:60%;" />
                                             </i-col>
                                         </row>
                                     </div>
@@ -113,13 +135,16 @@
                                 <carousel-item>
                                     <div class="carousel-2">
                                         <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                                <div class="background" style="height :60px;"></div>
+                                            </i-col>
                                             <i-col :xs="24" :sm="24" :md="10" :lg="10">
-                                                <h1>工控平台软件</h1>
-                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <h1>防打保龄系统</h1>
+                                                <p>实时的扫描堆场，获取每列箱道的堆箱高度，再结合小车的位置和起升高度，智能的限制小车速度,防止司机因意外操作</p>
                                                 <a href="4.html"><i-button type="primary">了解更多</i-button></a>
                                             </i-col>
                                             <i-col :xs="0" :sm="0" :md="10" :lg="10">
-                                                <img src="image/Front-end.png" />
+                                                <img src="image/Anti-Collision.png" />
                                             </i-col>
                                         </row>
                                     </div>
@@ -127,13 +152,16 @@
                                 <carousel-item>
                                     <div class="carousel-2">
                                         <row type="flex" justify="center" class="code-row-bg">
+                                            <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                                <div class="background" style="height :60px;"></div>
+                                            </i-col>
                                             <i-col :xs="24" :sm="24" :md="10" :lg="10">
-                                                <h1>工控平台软件</h1>
-                                                <p>新一代跨平台（Windows/Linux）工业自动化软件，可广泛应用于港口自动化、电力、市政工程、智能楼宇等行业。</p>
+                                                <h1>电站监控管理系统</h1>
+                                                <p>适应本地电站的独立实时监控管理,还能适应多个电站的远程集中管理,实现分布式远程监控。</p>
                                                 <a href="4.html"><i-button type="primary">了解更多</i-button></a>
                                             </i-col>
                                             <i-col :xs="0" :sm="0" :md="10" :lg="10">
-                                                <img src="image/Front-end.png" />
+                                                <img src="image/PowerSubstation-1.jpg" />
                                             </i-col>
                                         </row>
                                     </div>
