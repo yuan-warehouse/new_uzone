@@ -183,3 +183,18 @@
     margin-bottom: 20px;
     border-radius: 50%;
 }
+.join h2{
+    padding-top:30px;
+}
+
+.join h5 {
+    padding-top: 20px;
+    padding-bottom :10px;
+}
+.join li{
+    font-size:medium;
+    padding-bottom :20px;
+}
+.background{
+    height:100px;
+}
