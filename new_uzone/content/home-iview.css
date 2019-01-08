@@ -199,7 +199,7 @@
     height:110px;
 }
 .solution h1{
-    padding-top:30px;
+    padding-top:20px;
 }
 .solution h2 {
     padding-top: 10px;
@@ -214,4 +214,16 @@
 }
 .Advantage p{
     padding-top:0
+}
+.product h1 {
+    padding-top: 30px;
+}
+
+.product h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Anti p {
+    padding-bottom: 20px;
+    padding-top:0px;
 }

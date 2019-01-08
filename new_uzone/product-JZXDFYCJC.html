@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="product">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="16" :lg="16">
+                            <h1>集装箱堆放异常检测系统</h1>
+                            <row type="flex" justify="left" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                    <p>在轮胎吊进行堆场操作时，若集装箱堆放不整 齐，会提高操作难度，增加安全隐患，比如会更加 容易发生打保龄的事故。因此，我们设计此系统， 可通过视觉识别技术，自动判断堆场内的集装箱是 否已经堆放整齐。</p>
+                                    <p>若发现堆放不符合要求，比如前后左右间距不 平均，则发出报警，要求司机或自动化系统进行重 新码放，以减少事故隐患。</p>
+                                    <p>同时，系统可以对堆场内的状况进行初步报警， 比如当集卡载着集装箱误入未有底层集装箱堆放的 堆场内，系统也会报警，阻止起升下降。</p>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="6" :lg="6">
+                                    <img src="image/jzxjcyc-1.jpeg" style="width:100%;padding-left :20px;padding-right :20px;padding-top:20px" />
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="6" :lg="6">
+                                    <img src="image/jzxjcyc-2.jpeg" style="width:100%;height:300px;padding-left :20px;padding-right :20px;padding-top:20px" />
+                                </i-col>
+                            </row>
+                        </i-col>
+                    </row>
+                    <div class="background" style="height:80px;"></div>
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="16" :lg="16">
+                            <div class="Anti">
+                                <row type="flex" justify="left" class="code-row-bg">
+                                    <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                        <row type="flex" class="code-row-bg">
+                                            <i-col :xs="8" :sm="8" :md="4" :lg="4">
+                                                <img src="image/syxg.png" style="width:80%" />
+                                            </i-col>
+                                            <i-col :xs="16" :sm="16" :md="16" :lg="16">
+                                                <h2>适应性广</h2>
+                                                <p>
+                                                    支持所有集装箱类型。 实现昼夜及雨 / 雪 / 雾各种天气下正常工作。 同时可具备简易的安全保护功能，比如当集 卡载着集装箱误入未有底层集装箱堆放的堆 场内，系统将会产生报警。
+                                                </p>
+                                            </i-col>
+                                        </row>
+                                    </i-col>
+                                    <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                        <row type="flex" class="code-row-bg">
+                                            <i-col :xs="8" :sm="8" :md="4" :lg="4">
+                                                <img src="image/syxg.png" style="width:80%" />
+                                            </i-col>
+                                            <i-col :xs="16" :sm="16" :md="16" :lg="16">
+                                                <h2>安装简易</h2>
+                                                <p>
+                                                    摄像头安装无需特别调制，只要 可以看到较完整的车架状况即可。 报警信号支持多种规格，支持所 有主流 PLC 的 DI 模块。
+                                                </p>
+                                            </i-col>
+
+                                        </row>
+                                    </i-col>
+                                    <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                        <row type="flex" class="code-row-bg">
+                                            <i-col :xs="8" :sm="8" :md="4" :lg="4">
+                                                <img src="image/syxg.png" style="width:80%" />
+                                            </i-col>
+                                            <i-col :xs="16" :sm="16" :md="16" :lg="16">
+                                                <h2>兼容设备众多</h2>
+                                                <p>
+                                                    支持海康、索尼、松下、大华 等几乎所有主流摄像头品牌。 支持多种编码方式。
+                                                </p>
+                                            </i-col>
+
+                                        </row>
+                                    </i-col>
+                                </row>
+                                <row type="flex" justify="left" class="code-row-bg">
+                                    <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                        <row type="flex" class="code-row-bg">
+                                            <i-col :xs="8" :sm="8" :md="4" :lg="4">
+                                                <img src="image/syxg.png" style="width:80%" />
+                                            </i-col>
+                                            <i-col :xs="16" :sm="16" :md="16" :lg="16">
+                                                <h2>完整的数据追溯功能</h2>
+                                                <p>
+                                                    支持6个月历史纪录的回放。
+                                                </p>
+                                            </i-col>
+                                        </row>
+                                    </i-col>
+                                    <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                        <row type="flex" class="code-row-bg">
+                                            <i-col :xs="8" :sm="8" :md="4" :lg="4">
+                                                <img src="image/syxg.png" style="width:80%" />
+                                            </i-col>
+                                            <i-col :xs="16" :sm="16" :md="16" :lg="16">
+                                                <h2>性能可靠</h2>
+                                                <p>
+                                                    采用机器视觉识别技术，识别准确、可靠，可实现厘米级精准定位。
+                                                </p>
+                                            </i-col>
+                                        </row>
+                                    </i-col>
+                                </row>
+                                <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                    <div class="background" style="height:40px"></div>
+                                </i-col>
+                            </div>
+                            <div class="background"></div>
+                        </i-col>
+
+                    </row>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

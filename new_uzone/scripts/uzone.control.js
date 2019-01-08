@@ -28,28 +28,25 @@ Vue.component('uz-header', {
                                             <icon type="ios-arrow-down"></icon>\
                                         </a>\
                                         <dropdown-menu slot="list">\
-                                            <a href="solution-FiTools.html"><dropdown-item>车架防吊起系统</dropdown-item></a>\
-                                            <a href="solution-fontend.html"><dropdown-item>锁扣识别系统</dropdown-item></a>\
-                                            <a href="solution-cloud.html"><dropdown-item>防砸车头系统</dropdown-item></a>\
-											<a href="solution-embedded.html"><dropdown-item>集装箱堆放异常检测系统</dropdown-item></a>\
-											<a href="solution-FiTools.html"><dropdown-item>集卡对位系统</dropdown-item></a>\
-                                            <a href="solution-fontend.html"><dropdown-item>异常/入侵检测系统</dropdown-item></a>\
-                                            <a href="solution-cloud.html"><dropdown-item>轮胎吊大车自动行走系统（AGSS）</dropdown-item></a>\
-											<a href="solution-embedded.html"><dropdown-item>声纹检测系统（VRS)</dropdown-item></a>\
-											<a href="solution-FiTools.html"><dropdown-item>集装箱码头智能定位系统（PDS)</dropdown-item></a>\
-                                            <a href="solution-fontend.html"><dropdown-item>防打保龄系统</dropdown-item></a>\
-                                            <a href="solution-cloud.html"><dropdown-item>远程/自动操作</dropdown-item></a>\
-											<a href="solution-embedded.html"><dropdown-item>基于设备云技术的电力监控系统</dropdown-item></a>\
-											<a href="solution-FiTools.html"><dropdown-item>特种设备安全监控管理系统</dropdown-item></a>\
-                                            <a href="solution-fontend.html"><dropdown-item>远程 PLC 编程管理系统</dropdown-item></a>\
-                                            <a href="solution-cloud.html"><dropdown-item>基于大数据-云平台的智能建筑管理系统</dropdown-item></a>\
+                                            <a href="product-Anti-TruckLiftingImage.html"><dropdown-item>车架防吊起系统</dropdown-item></a>\
+                                            <a href="product-StackTwistlockImageDetection.html"><dropdown-item>锁扣识别系统</dropdown-item></a>\
+                                            <a href="product-FZCT.html"><dropdown-item>防砸车头系统</dropdown-item></a>\
+											<a href="product-JZXDFYCJC.html"><dropdown-item>集装箱堆放异常检测系统</dropdown-item></a>\
+											<a href="product-JKDW.html"><dropdown-item>集卡对位系统</dropdown-item></a>\
+                                            <a href="product-YCRQJZ.html"><dropdown-item>异常/入侵检测系统</dropdown-item></a>\
+                                            <a href="product-AGSS.html"><dropdown-item>轮胎吊大车自动行走系统（AGSS）</dropdown-item></a>\
+											<a href="product-VRS.html"><dropdown-item>声纹检测系统（VRS)</dropdown-item></a>\
+											<a href="product-PDS-1.html"><dropdown-item>集装箱码头智能定位系统（PDS)</dropdown-item></a>\
+                                            <a href="product-FDBLXT.html"><dropdown-item>防打保龄系统</dropdown-item></a>\
+                                            <a href="product-YCZDCZ.html"><dropdown-item>远程/自动操作</dropdown-item></a>\
+											<a href="product-DLJK.html"><dropdown-item>基于设备云技术的电力监控系统</dropdown-item></a>\
+											<a href="product-AQJG.html"><dropdown-item>特种设备安全监控管理系统</dropdown-item></a>\
+                                            <a href="product-PLCBCGL.html"><dropdown-item>远程 PLC 编程管理系统</dropdown-item></a>\
+                                            <a href="product-ZNJZGLTX.html"><dropdown-item>基于大数据-云平台的智能建筑管理系统</dropdown-item></a>\
                                         </dropdown-menu>\
                                     </dropdown>\
                                 </menu-item>\
                                 <menu-item name="4">\
-                                    我的设备\
-                                </menu-item>\
-                                <menu-item name="5">\
                                     <dropdown>\
                                         <a href="javascript:void(0)">\
                                             关于我们\
