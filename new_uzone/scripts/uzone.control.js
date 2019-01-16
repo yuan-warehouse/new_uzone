@@ -2,7 +2,7 @@
 Vue.component('uz-header', {
 	template: '<i-header breakpoint="md" collapsible :collapsed-width="78" >\
                 <row type="flex" justify="center" class="code-row-bg">\
-                    <i-col :xs="24" :sm="24" :md="18" :lg="18">\
+                    <i-col :xs="24" :sm="24" :md="16" :lg="16">\
                         <i-menu mode="horizontal" theme="light">\
                             <div class="layout-logo"><img src="image/logo.png" width=" 30" height="30" /></div>\
                             <div class="layout-nav">\

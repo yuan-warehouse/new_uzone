@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="product">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                            <h1>
+                                轮胎吊大车自动行走系统（AGSS）
+                            </h1>
+                            <row type="flex" justify="left" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="16" :lg="16">
+                                    <p>传统上 , 集装箱码头轮胎吊 (RTG) 大车行走 的传统作业方式主要采用手动纠偏，即：轮胎吊 司机通过双眼观察采用人工手动方式纠偏，保证 轮胎吊在指定堆场跑道上安全运行。</p>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img src="image/zdxz-3.jpg" style=" padding-left:20px;padding-bottom :20px;width :90%" />
+                                </i-col>
+                            </row>
+                        </i-col>
+                        <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                            <row type="flex" justify="left" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="16" :lg="16">
+                                    <ul style="font-size:medium;">
+                                        <li> 当司机疲劳作业时 , 极易出现误判、 操作失误或操作不当， 从而导致设备在运行过程中撞箱或相邻的两台RTG发生碰撞。</li>
+                                        <li> 夜晚作业时司机的视线黑暗 , 无法清晰判断大车行走轨迹 , 从而引起事故发生。</li>
+                                        <li> 部分场地路面不平整 , 司机为保证安全 , 会人为的降低行车 速度 , 从而影响生产效率。</li>
+                                    </ul>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img src="image/zdxz-2.jpg" style=" padding-left:20px;padding-bottom :20px;width:90%" />
+                                </i-col>
+                            </row>
+                        </i-col>
+                        <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                            <row type="flex" justify="left" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="16" :lg="16">
+                                    <p>我们基于大车编码器以及 DGPS（差分 GPS）/ 视觉识别系统 / 激光测距模块中的一种 或几种，开发出大车自动行走系统，实现智能纠 偏，减轻司机的工作强度，提高操作效率，保障 人员和设备安全。</p>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="8" :lg="8">
+                                    <img src="image/zdxz-1.jpg" style=" padding-left:20px;padding-bottom :20px;width:90%" />
+                                </i-col>
+                            </row>
+                        </i-col>
+                        <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                            <div class="background" style="height:40px"></div>
+                        </i-col>
+                    </row>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

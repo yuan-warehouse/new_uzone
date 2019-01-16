@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="product">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                            <h1>
+                                声纹检测系统（VRS)
+                            </h1>
+                            <p>
+                                电机、减速箱等具备转动部件的设备，在长期使用，磨损加剧，接近故障时， 往往其声音会与正常状况不同，因此只需不断的监控此声音的状态，即可做到未卜 先知，预测故障的产生。<br />
+                                此外，远程操作 / 无人操作的设备，也需要不断的巡检以保障设备正常，此系 统即可作为持续检测模块，提供不间断的监控与保护。
+                            </p>
+                            <div class="background " style=" height :20px"></div>
+                            <row type="flex" justify="left" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                    <h3 style="padding-top :20px">分区监控</h3>
+                                    <p style="padding-top :10px">可根据PLC提供的设备运行信号，分别监控起升、小车、 发动机等的异常响声。</p>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                    <h3 style="padding-top :20px">报警输出</h3>
+                                    <p style="padding-top :10px">若声音存在异常，系统在 4 小时内将会产生报警信号 并可输出到 PLC。</p>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                    <h3 style="padding-top :20px">区域监控</h3>
+                                    <p style="padding-top :10px">一个拾音器可采集 5 米 x5 米范围内的异常声音。</p>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                    <h3 style="padding-top :20px">音域宽广</h3>
+                                    <p style="padding-top :10px">可识别并分析 20~20000Hz 内的声音。</p>
+                                </i-col>
+                            </row>
+                            <div class="background " style=" height :40px"></div>
+                            <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                <img src="image/swjc-1.png"style=" width:560px;height :300px;padding-bottom :20px" />
+                            </i-col>
+                            <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                <img src="image/swjc-2.png"style=" width:560px;height :300px;padding-bottom :20px"/>
+                            </i-col>
+                            <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                <div class="background" style="height:40px"></div>
+                            </i-col>
+                        </i-col>
+                        
+                    </row>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

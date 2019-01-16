@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="product">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                            <h1 style="padding-top:30px">
+                                集装箱码头智能定位系统（PDS)
+                            </h1>
+                            <row type="flex" justify="left" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                    <p>
+                                        通过智能定位系统，可以自动检查轮胎吊的作业 箱位和指令箱位是否符合，且对所有作业箱位进行纪 录，并将其传送给码头操作系统，以避免作业错误， 提高整体操作效率，减少倒箱率。
+                                    </p>
+                                    <img src="image/zndw-2.png"style=" width:560px;height :260px;padding-top:20px" />
+                                    <img src="image/zndw-3.png" style=" width:560px;height :260px"/>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                    <ul style="font-size:medium;padding-top:30px;padding-left :30px">
+                                        <li>无需外部信号输入，可以仅仅通过大车 / 小车编 码器以及必要的 PLC 信号完成基本功能。</li>
+                                        <li>可以依靠 GPS/ 激光等额外的检测模块作位置复 位与验证。提高准确性和可靠性，任何一个定位方 式故障时，仍可维持准确性相当长的时间。</li>
+                                        <li>兼容多种硬件和上层操作系统。无论何种品牌的 GPS、编码器、激光测距仪或者上层操作系统，均 可与我司 PDS 系统兼容。</li>
+                                        <li>独特的动态码头地图设计，支持所有类型的堆场， 包括冷藏箱、普通重箱，20 尺、40 尺和 45 尺集 装箱堆场，也可以自定义任何堆场形状或布局。</li>
+                                        <li>兼容多种码头操作系统（如 ngen 等）。</li>
+                                        <li>完整的地图升级、共享、维护功能。</li>
+                                    </ul>
+                                    <img src="image/zdxz-2.jpg" style=" padding-left:20px;padding-bottom :20px;width :450px;height :250px" />
+                                </i-col>
+                            </row>
+                        </i-col>
+                        <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                            <div class="background" style="height:40px"></div>
+                        </i-col>
+                    </row>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

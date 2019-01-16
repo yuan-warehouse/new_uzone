@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <i-header breakpoint="md" collapsible :collapsed-width="78">
+            <row type="flex" justify="center" class="code-row-bg">
+                <i-col :xs="24" :sm="24" :md="18" :lg="18">
+                    <i-menu mode="horizontal" theme="light">
+                        <div class="layout-logo"><img src="image/logo.png" width=" 30" height="30" /></div>
+                        <div class="layout-nav">
+                            <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                                <a href=index.html><menu-item name="1">首页</menu-item></a>
+                                <menu-item name="2">
+                                    <dropdown>
+                                        <a href="javascript:void(0)">
+                                            解决方案
+                                            <icon type="ios-arrow-down"></icon>
+                                        </a>
+                                        <dropdown-menu slot="list">
+                                            <a href="solution-FiTools.html"><dropdown-item>飞图 (FiTools) 工控平台软件</dropdown-item></a>
+                                            <a href="solution-fontend.html"><dropdown-item>前端开发库</dropdown-item></a>
+                                            <a href="solution-cloud.html"><dropdown-item>云服务</dropdown-item></a>
+                                            <a href="solution-embedded.html"><dropdown-item>嵌入式系统</dropdown-item></a>
+                                        </dropdown-menu>
+                                    </dropdown>
+                                </menu-item>
+                                <menu-item name="3">
+                                    <dropdown>
+                                        <a href="javascript:void(0)">
+                                            产品案例
+                                            <icon type="ios-arrow-down"></icon>
+                                        </a>
+                                        <dropdown-menu slot="list">
+                                            <a href="product-Anti-TruckLiftingImage.html"><dropdown-item>车架防吊起系统</dropdown-item></a>
+                                            <a href="product-StackTwistlockImageDetection.html"><dropdown-item>锁扣识别系统</dropdown-item></a>
+                                            <a href="product-FZCT.html"><dropdown-item>防砸车头系统</dropdown-item></a>
+                                            <a href="product-JZXDFYCJC.html"><dropdown-item>集装箱堆放异常检测系统</dropdown-item></a>
+                                            <a href="product-JKDW.html"><dropdown-item>集卡对位系统</dropdown-item></a>
+                                            <a href="product-YCRQJZ.html"><dropdown-item>异常/入侵检测系统</dropdown-item></a>
+                                            <a href="product-AGSS.html"><dropdown-item>轮胎吊大车自动行走系统（AGSS）</dropdown-item></a>
+                                            <a href="product-VRS.html"><dropdown-item>声纹检测系统（VRS)</dropdown-item></a>
+                                            <a href="product-PDS-1.html"><dropdown-item>集装箱码头智能定位系统（PDS)</dropdown-item></a>
+                                            <a href="product-FDBLXT.html"><dropdown-item>防打保龄系统</dropdown-item></a>
+                                            <a href="product-YCZDCZ.html"><dropdown-item>远程/自动操作</dropdown-item></a>
+                                            <a href="product-DLJK.html"><dropdown-item>基于设备云技术的电力监控系统</dropdown-item></a>
+                                            <a href="product-AQJG.html"><dropdown-item>特种设备安全监控管理系统</dropdown-item></a>
+                                            <a href="product-PLCBCGL.html"><dropdown-item>远程 PLC 编程管理系统</dropdown-item></a>
+                                            <a href="product-ZNJZGLTX.html"><dropdown-item>基于大数据-云平台的智能建筑管理系统</dropdown-item></a>
+                                        </dropdown-menu>
+                                    </dropdown>
+                                </menu-item>
+                                <menu-item name="4">
+                                    <dropdown>
+                                        <a href="javascript:void(0)">
+                                            关于我们
+                                            <icon type="ios-arrow-down"></icon>
+                                        </a>
+                                        <dropdown-menu slot="list">
+                                            <a href="company.html"><dropdown-item>公司介绍</dropdown-item></a>
+                                            <a href="contact.html"><dropdown-item>联系我们</dropdown-item></a>
+                                            <a href="join.html"><dropdown-item>加入我们</dropdown-item></a>
+                                        </dropdown-menu>
+                                    </dropdown>
+                                </menu-item>
+                            </i-col>
+                            <i-col :xs="24" :sm="24" :md="0" :lg="0">
+                                <dropdown>
+
+                                </dropdown>
+                            </i-col>
+                        </div>
+                    </i-menu>
+                </i-col>
+            </row>
+        </i-header>
+        <i-content>
+            <div class="demo-carousel">
+                <row type="flex" justify="center" class="code-row-bg">
+                    <i-col :xs="22" :sm="22" :md="18" :lg="18">
+                        <carousel v-model="value1" loop>
+                            <carousel-item>
+                                <div class="demo-carousel">1</div>
+                            </carousel-item>
+                            <carousel-item>
+                                <div class="demo-carousel">2</div>
+                            </carousel-item>
+                            <carousel-item>
+                                <div class="demo-carousel">3</div>
+                            </carousel-item>
+                            <carousel-item>
+                                <div class="demo-carousel">4</div>
+                            </carousel-item>
+                        </carousel>
+                    </i-col>
+                </row>
+            </div>   
+
+        </i-content>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="product">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                            <h1>
+                                防打保龄系统
+                            </h1>
+                            <row type="flex" justify="left" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                                    <p>
+                                        由于堆场集装箱的堆放通常是高 低错落，在吊运过程中，稍有不慎就会 发生碰撞，轻则造成集装箱和货物的损 坏，重则造成人身伤亡事故。<br />
+                                        防打保龄系统通过扇形扫描传感 器，实时的扫描堆场，获取每列箱道的 堆箱高度，再结合小车的位置和起升高 度，智能的限制小车速度 , 防止司机因 意外操作而打下集装箱。
+                                    </p>
+                                    <div class="background " style="height:20px"></div>
+                                        <ul>
+                                            <li>基于 PLC+ 嵌入式硬件，稳定可靠</li>
+                                            <li>支持多种品牌的激光扫描仪</li>
+                                            <li>可同时提供在堆箱区、车道和鞍梁位置的保护</li>
+                                        </ul>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                    <img src="image/fdbl-2.png" />
+                                </i-col>
+                            </row>
+                            <img src="image/fdbl-1.jpg"style="width:100%" />
+                        </i-col>
+                        <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                            <div class="background" style="height:40px"></div>
+                        </i-col>
+                    </row>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

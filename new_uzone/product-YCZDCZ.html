@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="product">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                            <h1>
+                                远程 / 自动操作
+                            </h1>
+                            <p>
+                                综合我司多个子系统如 AGSS 系统与防打保龄系统、集卡对位系统、吊具防摇系统、 车架防吊起系统、集装箱自动对位系统、箱位检测系统等，再辅以远程操作台、工业以太 网和多种先进科技如激光雷达、DGPS、姿态控制等，即可实现轮胎吊的远程操作。<br />
+                                司机可安坐办公室，即可同时操作多台现场设备，且劳动强度可大大降低，装卸效 率得到提升，安全保障更为全面。
+                            </p>
+                            <div class="background " style="height:20px"></div>
+                            <div class="product-FDBLXT">
+                                 <ul>
+                                      <li>对远程通讯的依赖较低，不需要实时的工业以太网</li>
+                                      <li>方便升级为全自动操作系统</li>
+                                 </ul>
+                            </div>
+                            <row type="flex" justify="left" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                    <img src="image/yczdcz.png" style="width:100%"/>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                    <img src="image/yczdcz-3.png"style="width:100%" />
+                                </i-col>
+                            </row>
+                            <img src="image/yczdcz-4.png" style="width:90%"/>
+                        </i-col>
+                        <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                            <div class="background" style="height:40px"></div>
+                        </i-col>
+                    </row>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

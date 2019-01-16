@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="product">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                            <h1>
+                                远程 PLC 编程管理系统
+                            </h1>
+                            <div class="background " style="height:20px"></div>
+                            <row type="flex" justify="center" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                    <p style="padding-top:0">大型码头设备的电气系统都基于 PLC 系统， 随着维修保养的需要、新系统的安装等等原因， 需要不断的对 PLC 程序进行升级、修改，如果对 相关行为不能妥善管理，会导致程序混乱、维修 困难甚至带来安全隐患。</p>
+                                    <img src="image/plc.png" style="width:100%" />
+                                </i-col>
+                                <i-col :xs="0" :sm="0" :md="2" :lg="2"></i-col>
+                                <i-col :xs="24" :sm="24" :md="10" :lg="10">
+                                    <ul>
+                                        <li>基于 Web 技术，在任何安装有浏览器的电脑、平板 甚至手机上均可操作。通过适当的权限设置，可以通过 互联网在远端编程或查看同事编程。</li>
+                                        <li>只有得到授权的用户才可以登陆系统进行 PLC 编程， 且支持一个用户登录编程，多个用户登录观察，一次提 供多用户远程协作功能。</li>
+                                        <li>所有的操作均有历史纪录，提供追溯分析功能。 </li>
+                                        <li>确保修改不会上传错误，比如不会吧 TT01 的程序上 传至 TT02。</li>
+                                        <li>具备版本管理功能，所有的修改均自动生成一个版本。 版本可随时回退。系统保留 16 次可回退的历史版本。</li>
+                                    </ul>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="24" :lg="24">
+                                    <div class="background" style="height:40px"></div>
+                                    <img src="image/plc-1.png" style="width:100%" />
+                                </i-col>
+                                    
+                            </row>
+                        </i-col>
+                        <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                            <div class="background" style="height:40px"></div>
+                        </i-col>
+                    </row>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>uzone</title>
+    <link rel="stylesheet" type="text/css" href="./content/iview.css">
+    <link rel=" stylesheet" type="text/css" href="./content/home-iview.css" />
+    <script type="text/javascript" src="./scripts/vue.min.js"></script>
+    <script type="text/javascript" src="./scripts/iview.min.js"></script>
+    <script type="text/javascript" src="./scripts/uzone.control.js"></script>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="no">
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <uz-header></uz-header>
+            <i-content>
+                <div class="product">
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                            <h1>
+                                特种设备安全监控管理系统
+                            </h1>
+                            <div class="background " style="height:20px"></div>
+                            <row type="flex" justify="center" class="code-row-bg">
+                                <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                    <ul>
+                                        <li>基于基于GB/T 28264-2012 标准开发（完全符合国标要求）；</li>
+                                        <li>基于基于GB/T 28264-2012 标准开发（完全符合国标要求）；</li>
+                                        <li>一体化的设计，安装简便、调试轻松；</li>
+                                        <li>可融合在设备云中，在厂区或更大的范围内，方便的集成为<br />一个统一的系统；</li>
+                                    </ul>
+                                </i-col>
+                                <i-col :xs="24" :sm="24" :md="12" :lg="12">
+                                    <img src="image/tzsbjkgl.png" style="width:500px;height:280px" />
+                                </i-col>
+                                <div class="background" style="height:40px"></div>
+                            </row>
+                        </i-col>
+                    </row>
+                    <row type="flex" justify="center" class="code-row-bg">
+                        <i-col :xs="24" :sm="24" :md="14" :lg="14">
+                            <div class="demo-carousel">
+                                <carousel loop>
+                                    <carousel-item>
+                                        <div class="demo-carousel">
+                                            <row type="flex" justify="center" class="code-row-bg">
+                                                <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                    <img src="image/tzsbjkgl-1.jpg" style="width:100%"/>
+                                                </i-col>
+                                            </row>
+                                        </div>
+                                    </carousel-item>
+                                    <carousel-item>
+                                        <div class="demo-carousel">
+                                            <row type="flex" justify="center" class="code-row-bg">
+                                                <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                    <img src="image/tzsbjkgl-2.jpg" />
+                                                </i-col>
+                                            </row>
+                                        </div>
+                                    </carousel-item>
+                                    <carousel-item>
+                                        <div class="demo-carousel">
+                                            <row type="flex" justify="center" class="code-row-bg">
+                                                <i-col :xs="0" :sm="0" :md="10" :lg="10">
+                                                    <img src="image/tzsbjkgl-3.jpg" />
+                                                </i-col>
+                                            </row>
+                                        </div>
+                                    </carousel-item>
+                                </carousel>
+                            </div>
+                        </i-col>
+                        <i-col :xs="0" :sm="0" :md="24" :lg="24">
+                            <div class="background" style="height:40px"></div>
+                        </i-col>
+                    </row>
+                </div>
+            </i-content>
+            <uz-footer></uz-footer>
+        </layout>
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+
+        });
+    </script>
+</body>
+</html>
